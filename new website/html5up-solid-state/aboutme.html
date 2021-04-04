@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Kylie Outlaw</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutme.html">About Me</a></li>
+								<li><a href="projects.html">Engineering Projects</a></li>
+								<li><a href="other.html">Other Projects</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>About Me</h2>
+								<p>Learn about my background, interests, and hobbies.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Background</h3>
+									<p>I am an undergraduate student at the Missouri Universty of Science and Technology. 
+									I am studying computer engineering with a minor in computer science. 
+									My interest in engineering began when I was young; math was always my favorite subject and I hoped to enter a field where I would always be learning something new. 
+									My mom and I went to a SWE camp the year before I began high school and I fell in love with engineering. 
+									In the future, I aspire to work with programming embedded systems, helping to create products that improve the everyday quality of life for people worldwide. 
+									I also hope to leverage my career in computer engineering to encourage young women to enter engineering. </p>
+
+									<h3 class="major">Coursework & College Stuff</h3>
+									<p>Here's a little more about me - I hope you like C++. If you don't, you can find my resume <a href="assets/docs/kylieoutlaw.pdf" style "color:879bcd">here</a>.</p>
+
+									<section class="features">
+									
+									<pre><code class="C++">
+#ifndef STUDENT_H
+#define STUDENT_H
+#include &lt string &gt
+using namespace std;
+
+struct student {
+	string * relevantCoursework;
+	string * currentCoursework;
+	
+	string major;
+	string minor;
+	string college;
+	string grad;
+	string resume;
+	string email;
+	float gpa;
+	};
+#endif
+									</code></pre>	
+								
+									<pre><code class="C++">
+								
+#include "student.h"
+								
+int main()
+	{
+	student kylie; /* hey, that's me! */
+
+	/***************************
+	* overview
+	***************************/
+	kylie.major   = "Computer Engineering";
+	kylie.minor   = "Computer Science";
+	kylie.college = "Missouri University of Science and Technology";
+	kylie.grad    = "May 2022";
+	kylie.gpa     = 3.96f;
+
+	/***************************
+	* completed coursework
+	***************************/
+	kylie.relevantCoursework = new string[] { 
+		"Microcontrollers and Embedded System Design",
+		"Computer Organization and Design",
+		"Data Structures",
+		"Intro to Operating Systems",
+		"Intro to Computer Communication Networks" };
+
+									
+	/***************************
+	* spring 2021 coursework
+	***************************/
+	kylie.currentCoursework = new string[] {
+		"Real-Time Systems",
+		"Intro to Network Security",
+		"Intro to Electronic Devices",
+		"Senior Design 1" };
+
+	/***************************
+	* find out more or contact me!
+	***************************/
+	kylie.resume = <a href="/assets/docs/kylieoutlaw.pdf" style "color:879bcd">"kylieoutlaw.pdf"</a>;
+	kylie.email = "outlawkylie@gmail.com";
+	return 0;
+	}
+								</code></pre>
+									</section>
+									
+									<h3 class="major">Experience</h3>
+										<p>
+							<strong style = "font-size: 1.15em;"> Software Engineer Intern </strong>-<b> Garmin International </b> <br>
+							September 2019 - Current <br>
+							<span>
+							- Engineered and tested needed updates and bug fixes for the Garmin integrated flight deck displays.<br>
+							- Created and updated module tests to verify FAA standards are being met.<br>
+                            - Updated the trainer build process to streamline the trainer sim process.<br>
+                            - Effectively communicated and collaborated with other teams to solve technical problems.<br>
+							</span>
+							</p>
+							
+							<p>
+							<strong style = "font-size: 1.15em;"> Technical Support Intern </strong>-<b> Hyland Software </b> <br>
+							May 2019 - August 2019 <br>
+							<span>
+							- Diagnosed and resolved issues relating to Perceptive Intelligent Capture (Brainware). <br>
+							- Created and implemented regular expressions (regex) to ensure proper data extraction from documents.<br>
+							- Adjusted SQL Database tables to apply issue resolutions to customer environments. <br>
+							- Displayed courtesy and strong interpersonal skills with all customer interactions. <br>
+							</span>
+							</p>
+							
+							<p>
+							<strong style = "font-size: 1.15em;"> Barista </strong>-<b> Starbucks </b> <br>
+							June 2017 - January 2019 <br>
+							<span>
+								- Conversed and connected with customers and partners on a personal level. <br>
+								- Communicated business needs with other partners. <br>
+								- Partner of the Quarter, September 2017. <br>
+							</span>	
+										
+										
+										
+										
+										</p>
+								</div>
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<ul class="icons">
+								<p>Click some of the icons to see my social media or to e-mail me!</p>
+								<li><a href="https://www.linkedin.com/in/kylie-outlaw" class="icon brands fa-linkedin-in"></a></li>
+								
+								<li><a href="https://www.facebook.com/outlawkylie" class="icon brands solid fa-facebook-f"></a></li>
+								<li><a href="https://github.com/outlawkylie" class="icon brands solid fa-github"></a></li>
+								<li><a href="mailto: outlawkylie@gmail.com" class="icon solid fa-envelope"></a></li>
+								</ul> <ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
