@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE HTML>
-<!-- Hello there, welcome to my HTML code. 
-     As I am still new to learning HTML, I've used a CSS template by HTML5 UP
-     Then, I edited the HTML to fit what I needed for my website.
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
@@ -9,275 +10,117 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,500&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Literata:400,500&display=swap" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	
 	<body class="is-preload">
-
-		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Top -->
-						<div id="name">
-							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
-							<h1 id="title">Kylie Outlaw</h1>
-							<p>Computer Engineer</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#experience" id="experience-link"><span class="icon solid fa-folder-open">Experience</span></a></li>
-								<li><a href="#projects" id="projects-link"><span class="icon solid fa-lightbulb">Projects</span></a></li>
-							</ul>
-						</nav>
-
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
+		<!-- Colors--
+		#5b76b9
+		#425c9b
+		#354a7c 
+		#2a3b63
+		#222f4f
+		#26314b
+		#474f66
+		-->
+			
 		
-						<ul class="icons">
-						<p style="color:#B2B2B2;"> Check out my social media! </p>
-							<li><a href="https://www.linkedin.com/in/kylie-outlaw" target="_blank" class="icon brands fa-linkedin-in"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/outlawkylie" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li> --> 
-							<li><a href="mailto: outlawkylie@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+		<!-- Page Wrapper -->
+		<div id="page-wrapper">
 
-				</div>
+			<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="index.html">Kylie Outlaw</a></h1>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="zero dark cover">
-						<div class="container">
-							<header>
-							<br><br><BR>
-								<h2 class="alt">Hi! I'm <strong>Kylie Outlaw</strong>.<br />
-								</h2>
-							<br><br>
-							</header>
-							<br>
-						</div>
-					</section>
-					
-
-
-				<!-- About Me -->
-					<section id="about" class="two">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-								<p style="font-size:0.75em; margin-top=0px; font-family: 'Zilla Slab', serif;">
-									I am an undergraduate student at the Missouri Universty
-									of Science and Technology. I am studying computer engineering
-									with an emphasis in embedded systems.
-									My interest in engineering began when I was young; math was always my favorite subject 
-									and I hoped to enter a field where I would always be learning something new. 
-									My mom and I went to a "Women in Engineering" camp the year before I began high school 
-									and I decided that day that I would become an engineer.  In the future,
-									I aspire to work with embedded systems, helping to create products that 
-									improve the everyday quality of life for people worldwide. 
-									
-									<br>
-									<br>
-									Here's a little more about me - I hope you like C++.
-								</p>
-							</header>
-							<div class="item">
-								<pre style="line-height:1.25; font-size:1.0em;"><code class="C++">
-#ifndef STUDENT_H
-#define STUDENT_H
-#include &lt string &gt
-
-struct student {
-	std::string * relevantCoursework;
-	std::string * inProgressCoursework;
-	
-	std::string major;
-	std::string minor;
-	std::string college;
-	std::string expectedGraduation;
-	std::string resume;
-	std::string email;
-	float gpa;
-	};
-#endif
-								</code></pre>
-							</div>	
-								
-							<figure class="item"><pre style="line-height:1.25; font-size:1.0em;"><code class="C++">
-								
-#include "student.h"
-								
-int main()
-	{
-	student kylie; /* hey, that's me! */
-
-	/***************************
-	* overview
-	***************************/
-	kylie.major = "Computer Engineering";
-	kylie.minor = "Computer Science";
-	kylie.college = "Missouri University of Science and Technology";
-	kylie.expectedGraduation = "May 2022";
-	kylie.gpa = 3.96f;
-
-	/***************************
-	* completed coursework
-	***************************/
-	kylie.relevantCoursework = new std::string[] { 
-		"Microcontrollers and Embedded System Design",
-		"Computer Organization and Design",
-		"Data Structures",
-		"Intro to Operating Systems",
-		"Intro to Computer Communication Networks" };
-
-									
-	/***************************
-	* spring 2021 coursework
-	***************************/
-	kylie.inProgressCoursework = new std::string[] {
-		"Real-Time Systems",
-		"Intro to Network Security",
-		"Intro to Electronic Devices",
-		"Senior Design 1" };
-
-	/***************************
-	* find out more or contact me!
-	***************************/
-	kylie.resume = <a href="/assets/docs/kylieoutlaw.pdf" style "color:879bcd">"kylieoutlaw.pdf"</a>;
-	kylie.email = "outlawkylie@gmail.com";
-	return 0;
-	}
-								</code></pre>
-								
-							</figure>							
-							<!-- <button><a href="assets/docs/kylieoutlaw.pdf" download>Resume</a></button> <button><a href="mailto: outlawkylie@gmail.com">E-Mail</a></button> -->
-						</div>
-					</section>
-
-				<!-- Experience -->
-					<section id="experience" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Experience</h2>
-							</header>
-							
-							<p>
-							<strong> Software Engineer Intern </strong> <br>
-							<b> Garmin International </b> <br>
-							September 2019 - Current <br>
-							<span style = "font-size: .8em;">
-							- Engineered and tested needed updates and bug fixes for the Garmin integrated flight deck displays.<br>
-							- Created and updated module tests to verify FAA standards are being met.<br>
-                            - Updated the trainer build process to streamline the trainer sim process.<br>
-                            - Effectively communicated and collaborated with other teams to solve technical problems.<br>
-							</span>
-							</p>
-							
-							<p>
-							<strong> Technical Support Intern </strong> <br>
-							<b> Hyland Software </b> <br>
-							May 2019 - August 2019 <br>
-							<span style = "font-size: .8em;">
-							- Diagnosed and resolved issues relating to Perceptive Intelligent Capture (Brainware). <br>
-							- Created and implemented regular expressions (regex) to ensure proper data extraction from documents.<br>
-							- Adjusted SQL Database tables to apply issue resolutions to customer environments. <br>
-							- Displayed courtesy and strong interpersonal skills with all customer interactions. <br>
-							</span>
-							</p>
-							
-							<p>
-							<strong> Barista </strong> <br>
-							<b> Starbucks </b> <br>
-							June 2017 - January 2019 <br>
-							<span style = "font-size: .8em;">
-								- Conversed and connected with customers and partners on a personal level. <br>
-								- Communicated business needs with other partners. <br>
-								- Partner of the Quarter, September 2017. <br>
-							</span>
-						</div>
-					</section>
-
-				<!-- Projects -->
-					<section id="projects" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Projects</h2>
-							</header>
-
-							<p class = "projects"> 
-							
-									Infinity Mirror - finished! <br>
-								<span style = "font-size:0.8em;">
-									I see pictures of cool infinity mirrors all the time on Pinterest, and I really wanted to make one myself. 
-									I purchased a picture frame from IKEA that served as the frame for the mirrors, a 12" square mirror, individually addressable LEDs, and an acrylic one-way mirror. 
-									The LEDs were programmed using an Arduino Uno along with the FastLEDs library. 
-									<br>
-									Purchase parts ✔<br>
-									Receive parts ✔<br>
-									Design box ✔<br>
-									Put together ✔<br>
-									Test and Troubleshoot ✔<br><br>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/6nrUGhqFT2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									<br><br>
-									<span>
-									
-										<img src="images/infinitymirror1.jpg" style="width:400px;height:400px;"/>
-									
-										<img src="images/infinitymirror2.jpg" style="width:400px;height:400px;" />
-										
-									</span>
-									
-								</span>
-								
-								<br><br>
-								
-								Computer Monitor Ambilight - in progress!<br>
-								<span style = "font-size:0.8em;">
-									I think LEDs are really cool. My computer system is pretty neat, but my monitor feels lacking.
-									I want to add LEDs to the back of my monitor that will light up the same color as the monitor's edge.<br>
-									Purchase parts ✔<br>
-									Receive parts ✔<br>
-									Design schematic ✔<br>
-									Put together <b>~</b><br>
-									Test and Troubleshoot ✘<br>
-								</span>
-
-
-							</p>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Kylie Outlaw </li><li>Design: HTML5 UP</li>
+			<!-- Menu -->
+			<nav id="menu">
+				<div class="inner">
+					<h2>Menu</h2>
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="projects.html">Engineering Projects</a></li>
+						<li><a href="other.html">Other Interests</a></li>
 					</ul>
+					<a href="#" class="close">Close</a>
+				</div>
+			</nav>
 
-			</div>
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<!-- <div class="logo"><span class="icon fa-gem"></span></div>-->
+					<h2>Kylie Outlaw</h2>
+					<p> Future Computer Engineer </p>
+				</div>
+			</section>
+
+			<!-- Wrapper -->
+			<section id="wrapper">
+
+				<!-- One -->
+				<section id="one" class="wrapper spotlight style1">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/profile.jpg" alt="" /></a>
+						<div class="content">
+							<h2 class="major">About Me</h2>
+							<p>
+								Why did I decide to become a computer engineer? What classes have I taken? <br>
+								What experience do I have? What am I interested in?
+							</p>
+							<a href="aboutme.html" class="special">View my profile</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper alt spotlight style2">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/code.png" alt="" /></a>
+						<div class="content">
+							<h2 class="major">Engineering Projects</h2>
+							<p>Take a look at my personal projects ranging from Arduino and Nucleoboard projects to creating programs on the PC.</p>
+							<a href="projects.html" class="special">View my projects</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Three -->
+				<section id="three" class="wrapper spotlight style3">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/hiking_sq.jpg" alt="" /></a>
+						<div class="content">
+							<h2 class="major">Other Interests</h2>
+							<p>Outside of school, work, and engineering projects, what else do I do?</p>
+							<a href="other.html" class="special">Learn more</a>
+						</div>
+					</div>
+				</section>
+
+			</section>
+			<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<h2 class="major">Get in touch</h2>
+					<ul class="icons">
+						<p>Click some of the icons to see my social media or to e-mail me!</p>
+						<li><a href="https://www.linkedin.com/in/kylie-outlaw"  target="_blank" class="icon brands fa-linkedin-in"></a></li>
+
+						<li><a href="https://www.facebook.com/outlawkylie" target="_blank" class="icon brands solid fa-facebook-f"></a></li>
+						<li><a href="https://github.com/outlawkylie" target="_blank" class="icon brands solid fa-github"></a></li>
+						<li><a href="email.html" class="icon solid fa-envelope"></a></li>					</ul> <ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
